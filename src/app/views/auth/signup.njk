@@ -1,0 +1,33 @@
+{% extends "_layouts/auth.njk" %}
+
+{% block body %}
+  <form action="/signup" method="POST" enctype="multipart/form-data">
+    <label for="avatar">
+      <img src="/images/avatar.svg", height="24">
+    </label>
+
+    <input id="avatar" name="avatar" type="file">
+
+    <input type="text" name="nome" placeholder="Nome Compeleto"/>
+    <input type="email" name="email" placeholder="Seu e-mail"/>
+    <input type="password" name="password" placeholder="Senha secreta"/>
+
+    <label for="provider">
+      <input type="checkbox" id="provider" name="provider" value="1" />
+      Sou cabeleleiro
+    </label>
+
+    <button type="submit">Criar conta</button>
+    <a href="/signin">Ja possui conta</a>
+  </form>
+
+  <script type="text/javascript">
+    const avatarInput = document.getElementById('avatar');
+    const img = document.querySelector('label[for=avatar] img')
+
+    avatar.onchange = function(e){
+      img.classList.add('preview');
+      img.src = URL.createObjectURL(e.target.files[0])
+    }
+  </script>
+{% endblock %}
