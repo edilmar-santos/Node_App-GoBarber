@@ -1,10 +1,8 @@
 # Node_App-GoBarber
 
-O que é o Go Barber ?
+- Gobarber é um aplicação que simula um sistema de barbearia. Utilizando como base o Node.js e rendenderizando as telas por meio do Nunjucks.
 
-- Gobarber é um aplicação que simula um sistema de barbearia. Utilizando como base o Node js e server side rendering Nunjucks.
-
-Intruções para o uso inicial
+# Intruções para o uso inicial
 
 - Nomear o arquivo ".env.example" para ".env"
 - Preencher o arquivo ".env" com os dados correspondentes aos da sua conexão
